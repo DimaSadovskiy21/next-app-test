@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -29,3 +29,15 @@ a {
   --black: #000000;
 }
 `;
+
+export const Wrapper = styled("div")({
+  width: "1366px",
+  fontSize: "var(--font-default-size)",
+  color: "var(--black)",
+});
+
+export const Main = styled("main")({
+  minHeight: "730px",
+  borderTop: "3px solid var(--orange)",
+  borderBottom: "3px solid var(--orange)",
+});
