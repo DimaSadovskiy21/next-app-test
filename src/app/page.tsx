@@ -1,14 +1,16 @@
-'use client';
-import Image from "next/image";
-
+"use client";
 import { Title } from "components";
 import { slide } from "assets/images";
 
+import { ImageStyled, ImageWrapper, MainWrapper } from "./styles";
+
 const Main = () => (
-  <div>
+  <MainWrapper>
     <Title>Main page</Title>
-    {/* <Image src={slide} alt="main image" /> */}
-  </div>
+    <ImageWrapper>
+      <ImageStyled src={slide} alt="background" />
+    </ImageWrapper>
+  </MainWrapper>
 );
 
 export default Main;

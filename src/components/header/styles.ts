@@ -5,5 +5,5 @@ export const HeaderWrapper = styled('header')({
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     minHeight: '124px',
-    padding: "14px 141px ",
+    padding: "14px 0",
 })

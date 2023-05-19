@@ -1,14 +1,14 @@
-'use client';
-import { FC } from 'react';
-import { Inter } from 'next/font/google';
+"use client";
+import { FC } from "react";
+import { Inter } from "next/font/google";
 
-import { Header, Footer } from 'components';
+import { Header, Footer, Line } from "components";
 
-import { IRootLayoutProps } from './types';
-import { GlobalStyle, Main, Wrapper } from './globalStyles';
-import Head from './head';
+import { IRootLayoutProps } from "./types";
+import { GlobalStyle, Main, Wrapper } from "./globalStyles";
+import Head from "./head";
 
-const inter = Inter({ subsets: ['latin'], weight: '400' });
+const inter = Inter({ subsets: ["latin"], weight: "400" });
 
 const RootLayout: FC<IRootLayoutProps> = ({ children }) => (
   <html lang="en">
@@ -16,7 +16,11 @@ const RootLayout: FC<IRootLayoutProps> = ({ children }) => (
     <body className={inter.className}>
       <Wrapper>
         <Header />
-        <Main>{children}</Main>
+        <Line />
+        <Main>
+          {children}
+        </Main>
+        <Line />
         <Footer />
         <GlobalStyle />
       </Wrapper>

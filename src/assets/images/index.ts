@@ -1,1 +1,1 @@
-export {default as slide} from './slide.jpg'
+export {default as slide} from "./slide.png";
