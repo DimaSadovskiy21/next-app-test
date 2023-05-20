@@ -11,18 +11,21 @@ const Navbar = () => {
       <LinkStyled
         href={ROUTES.HOME}
         $isPathnameEqual={pathname === ROUTES.HOME}
+        prefetch={true}
       >
         Main
       </LinkStyled>
       <LinkStyled
         href={ROUTES.SETTINGS}
         $isPathnameEqual={pathname === ROUTES.SETTINGS}
+        prefetch={true}
       >
         Settings
       </LinkStyled>
       <LinkStyled
         href={ROUTES.WALLETS}
         $isPathnameEqual={pathname === ROUTES.WALLETS}
+        prefetch={true}
       >
         Wallets
       </LinkStyled>
