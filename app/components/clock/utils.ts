@@ -7,7 +7,6 @@ const dateOptions = {
 const timeOptions = {
   hour: 'numeric',
   minute: 'numeric',
-  second: 'numeric',
 } as const;
 
 export const generateRuDateFormat = (date: Date) => date.toLocaleString('ru', dateOptions);
