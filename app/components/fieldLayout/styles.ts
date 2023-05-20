@@ -8,5 +8,8 @@ export const FieldLayoutWrapper = styled("div")({
     gap: "40px",
     padding: "7px",
     borderRadius: "5px",
-    backgroundColor: "var(--gray)"
+    backgroundColor: "var(--gray)",
+    "@media(max-width: 730px)": {
+        gap: "20px",
+      },
 });

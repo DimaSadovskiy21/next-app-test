@@ -7,6 +7,9 @@ import { ILinkStyledProps } from "./types";
 export const NavbarWrapper = styled("div")({
   display: "flex",
   gap: "25px",
+  '@media(max-width: 495px)': {
+    marginRight: "10px",
+  },
 });
 
 export const LinkStyled = styled(Link)<ILinkStyledProps>(
@@ -15,5 +18,6 @@ export const LinkStyled = styled(Link)<ILinkStyledProps>(
     fontSize: "var(--font-medium-size)",
     color: "var(--orange)",
     borderBottom: $isPathnameEqual ? "2px solid var(--orange)" : "",
+    
   })
 );

@@ -10,4 +10,13 @@ export const CustomInput = styled("input")({
   fontWeight: "inherit",
   fontSize: "inherit",
   outline: "none",
+  "@media(max-width: 1140px)": {
+    minWidth: "300px",
+  },
+  "@media(max-width: 1000px)": {
+    minWidth: "250px",
+  },
+  "@media(max-width: 425px)": {
+    minWidth: "200px",
+  }
 });

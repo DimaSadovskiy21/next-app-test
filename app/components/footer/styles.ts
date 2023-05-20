@@ -6,6 +6,12 @@ export const FooterWrapper = styled("footer")({
   gap: "133px",
   minHeight: "103px",
   padding: "16px 0",
+  "@media(max-width: 865px)": {
+    gap: "68px",
+  },
+  "@media(max-width: 670px)": {
+    gap: "34px",
+  }
 });
 
 export const Description = styled('p')({

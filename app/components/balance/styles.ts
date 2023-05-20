@@ -19,7 +19,8 @@ export const Item = styled("div")({
   justifyContent: "space-between",
   padding: "7px 14px",
   backgroundColor: "var(--dark-gray)",
-  ":nth-child(2)": {
-    backgroundColor: "var(--reserved-color)",
-  },
 });
+
+export const ReservedItem = styled(Item)({
+  backgroundColor: "var(--reserved-color)",
+})

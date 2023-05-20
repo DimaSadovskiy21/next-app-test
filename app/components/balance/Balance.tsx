@@ -1,4 +1,4 @@
-import { BalanceWrapper, Item, Items } from "./styles";
+import { BalanceWrapper, Item, Items, ReservedItem } from "./styles";
 
 const Balance = () => <BalanceWrapper>
     <p>Balance</p>
@@ -7,10 +7,10 @@ const Balance = () => <BalanceWrapper>
             <p>Aviable</p>
             <p>27.45 GBP</p>
         </Item>
-        <Item>
+        <ReservedItem>
             <p>Reserved</p>
             <p>0.00 GBP</p>
-        </Item>
+        </ReservedItem>
         <Item>
             <p>Total</p>
             <p>27.45 GBP</p>
