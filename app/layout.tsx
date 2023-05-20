@@ -9,6 +9,7 @@ import { Header, Footer, Line } from '@/components';
 import { IRootLayoutProps } from './types';
 import { GlobalStyle, Main, Wrapper } from './globalStyles';
 import Head from './head';
+import StyledComponentsRegistry from './lib/registry';
 
 const inter = Inter({ subsets: ['latin'], weight: '400' });
 
@@ -16,16 +17,18 @@ const RootLayout: FC<IRootLayoutProps> = ({ children }) => (
   <html lang="en">
     <Head />
     <body className={inter.className}>
-      <Wrapper>
-        <Header />
-        <Line />
-        <Provider store={setupStore()}>
-          <Main>{children}</Main>
-        </Provider>
-        <Line />
-        <Footer />
-      </Wrapper>
-      <GlobalStyle />
+      <StyledComponentsRegistry>
+        <Wrapper>
+          <Header />
+          <Line />
+          <Provider store={setupStore()}>
+            <Main>{children}</Main>
+          </Provider>
+          <Line />
+          <Footer />
+        </Wrapper>
+        <GlobalStyle />
+      </StyledComponentsRegistry>
     </body>
   </html>
 );
