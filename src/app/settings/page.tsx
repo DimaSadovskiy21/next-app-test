@@ -1,45 +1,62 @@
-"use client";
-import Image from "next/image";
+'use client';
+import { ChangeEvent, useEffect, useState } from 'react';
+import Image from 'next/image';
 
+import { FieldLayout, Form, IconLayout, Input, Select, Title } from 'components';
+import { useAppDispatch, useAppSelector } from 'hooks';
+import { account, format } from 'assets/vectors';
 import {
-  FieldLayout,
-  Form,
-  IconLayout,
-  Input,
-  Select,
-  Title,
-} from "components";
-import { account, format } from "assets/vectors";
+  dateFormatSelector,
+  setDateFormat,
+  setTimeFormat,
+  timeFormatSelector,
+} from 'store/reducers/date';
 
-import { FormWrapper, SettingsWrapper, Time } from "./styles";
+import { FormWrapper, SettingsWrapper } from './styles';
+import { Clock } from './clock';
 
 const Settings = () => {
-  const timeFormatItems = [
-    {
-      id: crypto.randomUUID(),
-      value: "24-hours",
-    },
-    {
-      id: crypto.randomUUID(),
-      value: "12-hour",
-    },
-  ];
+  const timeFormat = useAppSelector(timeFormatSelector);
+  const dateFormat = useAppSelector(dateFormatSelector);
+
+  const dispatch = useAppDispatch();
+
+  const handleChangeDateFormat = (e: ChangeEvent<HTMLSelectElement>) => {
+    dispatch(setDateFormat(e.currentTarget.value));
+  };
+
+  const handleChangeTimeFormat = (e: ChangeEvent<HTMLSelectElement>) => {
+    dispatch(setTimeFormat(e.currentTarget.value));
+  };
+
+  
 
   const dateFormatItems = [
     {
       id: crypto.randomUUID(),
-      value: "dd/mm/yyyy",
+      value: 'yyyy.mm.dd',
     },
     {
       id: crypto.randomUUID(),
-      value: "yyyy.mm.dd",
+      value: 'dd/mm/yyyy',
+    },
+  ];
+
+  const timeFormatItems = [
+    {
+      id: crypto.randomUUID(),
+      value: '24-hours',
+    },
+    {
+      id: crypto.randomUUID(),
+      value: '12-hour',
     },
   ];
 
   return (
     <SettingsWrapper>
       <Title>Settings</Title>
-      
+
       <FormWrapper>
         <IconLayout title="Account">
           <Image src={account} alt="account" />
@@ -67,13 +84,23 @@ const Settings = () => {
         <Form>
           <FieldLayout>
             <label htmlFor="timeformat">Time format</label>
-            <Select id="timeformat" items={timeFormatItems} />
+            <Select
+              id="timeformat"
+              items={timeFormatItems}
+              value={timeFormat}
+              onChange={handleChangeTimeFormat}
+            />
           </FieldLayout>
           <FieldLayout>
             <label htmlFor="dateformat">Date format</label>
-            <Select id="dateformat" items={dateFormatItems} />
+            <Select
+              id="dateformat"
+              items={dateFormatItems}
+              value={dateFormat}
+              onChange={handleChangeDateFormat}
+            />
           </FieldLayout>
-          <Time>02/05/2023 12:32</Time>
+          <Clock />
         </Form>
       </FormWrapper>
     </SettingsWrapper>

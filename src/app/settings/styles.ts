@@ -12,7 +12,3 @@ export const FormWrapper = styled("div")({
   minHeight: "204px",
 });
 
-export const Time = styled("div")({
-  margin: "0 46%",
-  whiteSpace: "nowrap",
-});
