@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { telegram, vk, youtube } from "@/assets/vectors";
+import { telegram, vk, youtube } from "@/app/assets/vectors";
 
 import { ContactsWrapper, Links, Title } from "./styles";
 

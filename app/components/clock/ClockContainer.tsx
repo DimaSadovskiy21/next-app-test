@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-import { useAppSelector } from '@/hooks';
-import { dateFormatSelector, timeFormatSelector } from '@/store/reducers/date';
+import { useAppSelector } from '@/app/hooks';
+import { dateFormatSelector, timeFormatSelector } from '@/app/store/reducers/date';
 
 import {
   generateEnDateFormat,

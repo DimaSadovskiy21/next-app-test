@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { arrow } from '@/assets/vectors';
+import { arrow } from '@/app/assets/vectors';
 
 import { ISelectProps } from './types';
 import { Arrow, CustomSelect, SelectWrapper } from './styles';

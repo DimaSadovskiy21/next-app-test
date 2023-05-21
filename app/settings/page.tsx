@@ -1,13 +1,13 @@
 'use client';
 import { ChangeEvent } from 'react';
 
-import { useAppDispatch, useAppSelector } from '@/hooks';
+import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import {
   dateFormatSelector,
   setDateFormat,
   setTimeFormat,
   timeFormatSelector,
-} from '@/store/reducers/date';
+} from '@/app/store/reducers/date';
 
 import Settings from './Settings';
 

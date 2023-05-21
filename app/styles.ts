@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-import { slide } from '@/assets/images';
+import { slide } from '@/app/assets/images';
 
 export const MainWrapper = styled('div')({
   display: 'flex',

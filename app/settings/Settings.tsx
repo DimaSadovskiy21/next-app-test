@@ -2,9 +2,9 @@
 import { FC } from 'react';
 import Image from 'next/image';
 
-import { FieldLayout, Form, IconLayout, Input, Select, Title, Clock } from '@/components';
+import { FieldLayout, Form, IconLayout, Input, Select, Title, Clock } from '@/app/components';
 
-import { account, format } from '@/assets/vectors';
+import { account, format } from '@/app/assets/vectors';
 
 import { ISettingProps } from './types';
 import { FormWrapper, SettingsWrapper } from './styles';

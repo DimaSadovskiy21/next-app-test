@@ -1,6 +1,6 @@
 'use client';
-import { Title } from '@/components';
-import { slide } from '@/assets/images';
+import { Title } from '@/app/components';
+import { slide } from '@/app/assets/images';
 
 import { ImageStyled, ImageWrapper, MainWrapper } from './styles';
 

@@ -8,8 +8,8 @@ import {
   IconLayout,
   Input,
   Title,
-} from "@/components";
-import { wallet } from "@/assets/vectors";
+} from "@/app/components";
+import { wallet } from "@/app/assets/vectors";
 
 import { FormWrapper, WallestWrapper } from "./styles";
 
