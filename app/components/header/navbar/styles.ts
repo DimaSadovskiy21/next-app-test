@@ -7,7 +7,7 @@ import { ILinkStyledProps } from "./types";
 export const NavbarWrapper = styled("div")({
   display: "flex",
   gap: "25px",
-  '@media(max-width: 495px)': {
+  '@media screen and (max-width: 495px)': {
     marginRight: "10px",
   },
 });

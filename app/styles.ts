@@ -14,13 +14,13 @@ export const MainWrapper = styled('div')({
 export const ImageWrapper = styled('div')({
   position: 'relative',
   margin: '0 -141px',
-  '@media(max-width: 865px)': {
+  '@media screen and (max-width: 880px)': {
     margin: '0 -70px',
   },
-  '@media(max-width: 670px)': {
+  '@media screen and (max-width: 720px)': {
     margin: '0 -35px',
   },
-  '@media(max-width: 495px)': {
+  '@media screen and (max-width: 495px)': {
     margin: 0,
   },
 });
@@ -31,7 +31,7 @@ export const ImageStyled = styled(Image)({
   top: 0,
   width: '100%',
   height: '474px',
-  '@media(max-width: 670px)': {
+  '@media screen and (max-width: 720px)': {
     height: '340px',
   },
 });

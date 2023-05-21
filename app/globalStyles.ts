@@ -42,13 +42,13 @@ export const Wrapper = styled("div")({
   padding: "0 141px",
   fontSize: "var(--font-default-size)",
   color: "var(--black)",
-  "@media(max-width: 865px)": {
+  "@media screen and (max-width: 880px)": {
     padding: "0 70px",
   },
-  "@media(max-width: 670px)": {
+  "@media screen and (max-width: 720px)": {
     padding: "0 35px",
   },
-  "@media(max-width: 495px)": {
+  "@media screen and (max-width: 495px)": {
     padding: 0,
   }
 });

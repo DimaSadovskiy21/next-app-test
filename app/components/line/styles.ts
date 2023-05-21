@@ -6,13 +6,13 @@ export const CustomLine = styled("div")({
   height: "3px",
   margin: "0 -141px",
   backgroundColor: "var(--orange)",
-  "@media(max-width: 865px)": {
+  "@media screen and (max-width: 880px)": {
     margin: "0 -70px",
   },
-  "@media(max-width: 670px)": {
+  "@media screen and (max-width: 720px)": {
     margin: "0 -35px",
   },
-  "@media(max-width: 495px)": {
+  "@media screen and (max-width: 495px)": {
     margin: 0,
   }
 });

@@ -16,13 +16,13 @@ export const CustomSelect = styled('select')({
   fontSize: 'inherit',
   outline: 'none',
   appearance: 'none',
-  "@media(max-width: 1140px)": {
+  "@media screen and (max-width: 1140px)": {
     minWidth: "300px",
   },
-  "@media(max-width: 1000px)": {
+  "@media screen and (max-width: 1000px)": {
     minWidth: "250px",
   },
-  "@media(max-width: 425px)": {
+  "@media screen and (max-width: 495px)": {
     minWidth: "200px",
   }
 });

@@ -6,7 +6,7 @@ export const ClockWrapper = styled('div')({
   gap: '5px',
   margin: '0 46%',
   whiteSpace: 'nowrap',
-  "@media(max-width: 1000px)": {
+  "@media screen and (max-width: 1000px)": {
     margin: '0 auto',
   },
 });

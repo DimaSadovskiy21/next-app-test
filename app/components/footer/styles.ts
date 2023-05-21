@@ -6,10 +6,10 @@ export const FooterWrapper = styled("footer")({
   gap: "133px",
   minHeight: "103px",
   padding: "16px 0",
-  "@media(max-width: 865px)": {
+  "@media screen and (max-width: 880px)": {
     gap: "68px",
   },
-  "@media(max-width: 670px)": {
+  "@media screen and (max-width: 720px)": {
     gap: "34px",
   }
 });

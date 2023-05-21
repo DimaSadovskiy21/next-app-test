@@ -9,7 +9,7 @@ export const FieldLayoutWrapper = styled("div")({
     padding: "7px",
     borderRadius: "5px",
     backgroundColor: "var(--gray)",
-    "@media(max-width: 730px)": {
+    "@media screen and (max-width: 880px)": {
         gap: "20px",
       },
 });

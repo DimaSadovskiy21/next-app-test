@@ -8,7 +8,7 @@ export const FormWrapper = styled("form")({
   width: "100%",
   padding: "14px 24px 10px",
   backgroundColor: "var(--dark-gray)",
-  "@media(max-width: 425px)": {
+  "@media screen and (max-width: 495px)": {
     padding: "14px 10px 10px",
   }
 });
